@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/* impotar fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
+
+
+.body{
+    width: 100%;
+    display: grid;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas:
+      "header header header"
+      "portada portada portada"
+      "presentacion presentacion presentacion"
+      "footer footer footer";
+    overflow-x: hidden;
+}
+
+header#header{
+    grid-area: header;
+    background-color:#fff5ea;
+}
+
+
+.header__div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #837367;  
+    font-weight: bold;
+    font-size: 100%;
+    font-family:'Abhaya Libre', serif; 
+}
+
+.header__otros{
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.img__logo{
+    width: 70px;
+    height: 70px;
+}
+.header__logo{
+    margin-left: 2%;
+}
+.header__div__a{
+    margin: 5px;
+}
+
+/*MAIN INDEX*/
+
+.main{
+    height: auto;
+    background-image: linear-gradient(to bottom, #fff9ed, #fef5e9, #fcf2e4, #fbeee0, #faeadc, #ddcfc2, #dfcbbc, #dac8ba, #d3c2b5, #c4b4a7, #b5a599);
+}
+
+.main2{
+    background-image: linear-gradient(to bottom,#b5a599,#c4b4a7, #fff9ed, #fef5e9, #fcf2e4, #fbeee0, #faeadc, #ddcfc2, #dfcbbc, #dac8ba, #d3c2b5, #c4b4a7, #b5a599);
+}
+
+section#portada1{
+    grid-area: portada;   
+}
+
+ 
+.portada{
+    width: 100%;
+    height: 85vh;  
+}
+
+
+.main__portada2{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.main__div__portada{
+    color: white;
+    text-align: center;
+}
+
+
+.slogan{
+    width: 25%;
+    font-family:'Monte Carlo';
+    font-style: italic;
+    background-color: #dcb58e;
+}
+
+.slogan1{
+    width: 20%;
+    background-color: #9d7e5f;
+    font-family:'Cinzel', serif;
+}
+
+
+.slogan2{ 
+    position:absolute;
+    width: 15%;
+    color: white;
+    background-color: #b8a19a ;
+    font-family:'Cormorant Garamond', serif;
+    border-style: outset;
+}
+
+
+
+section#presentacion{
+    grid-area: presentacion;
+    width: 100%  
+     
+}
+
+.main__div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video{
+    width:80%;  
+}
+
+.main__div__sec{
+    text-align: center;
+    font-family:'Abhaya Libre', serif;
+    color:#4e453e;
+
+}
+.nosotros__titulo{
+    color: #4e453e;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.nosotros__text{
+    font-size: 25px;
+    margin-right: 10%;
+}
+
+/*PRODUCTOS*/
+
+.intro{
+    position: absolute;
+    background-color: #837367;
+    color: #fff9ed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 30%; 
+    width: 50%;
+    height: 70px;
+}
+
+.main__vela{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 5rem;
+    justify-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    
+}
+
+.img__velas{
+    width: 250px;
+    height: 250px;
+    
+}
+.datos__vela{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.button{
+    width: 200px;
+    background-color: black;
+    font-family:'Abhaya Libre', serif;
+    color: white;
+}
+
+/*LOCALES*/
+
+.intro2{
+    background-color: #837367;
+    color: #fff9ed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.locales__intro{
+    width: auto;
+    height: auto;
+    margin: 5%;
+    
+}
+.titulo{
+    margin-bottom: 1%;
+}
+
+.div1{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%; 
+    
+}
+
+.div__h{
+    width: 100%;
+    height: 50%;
+    font-family:'Abhaya Libre', serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.img__local{
+    width: 40%;
+    height:50%; 
+}
+
+.div__div__h{
+    background-color: #29972e;
+    color: #EDE4B5;
+    width: 80%;
+    height: 50%;
+}
+
+.nom__local{
+    text-align: center;
+    margin-top: 10px;
+    font-size: xx-large;
+}
+.nom2__local{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: medium;
+   
+}
+
+.div__direc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    height: 50%;
+}
+.direcciones{
+    display: flex;
+    margin: 10%;
+}
+
+
+.div__div__h2{
+    background-color: #be1919;
+    color: #EDE4B5;
+    width: 80%;
+    height: 50%;
+}
+
+.div__h2{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.div__direc2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: 50%;
+}
+.map, .p{
+    margin: 1%;
+}
+
+/*LOGIN*/
+
+.body2{
+    width: 100%;
+    display: grid;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+      "header header header"
+      "portada portada portada"
+      "footer footer footer";
+    overflow-x: hidden;
+}
+
+.main__login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.img__login{
+    width: 20%;
+    height: 30%;
+}
+
+.form2{
+    width: 50%;
+    margin-top: 125px;
+}
+.intro3{
+    position: absolute;
+    top: 20%; 
+    background-color: #837367;
+    font-family:'Abhaya Libre', serif;
+    color: #EDE4B5;
+    width: 49%;
+    height: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/*CONTACTO*/
+.form1{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space{
+    background-color: white;
+    font-family:'Abhaya Libre', serif;
+    color: #837367;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ebd9cb;
+    font-family:'Abhaya Libre', serif;
+    color: #6e5f54;
+}
+
+.footer__div{
+    margin-left: 2%;
+}
+
+.footer__div__redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.submit{
+    background-color: #6e5f54;
+}
+
+.ul__li{
+    text-decoration: none;
+    color: #6e5f54;
+}
+.footer__auroma{
+    margin-right: 2%;
+    color: #6e5f54;
+}
+
+
+
+@media (max-width:768px){
+    .body{
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto auto;
+        
+    }
+
+    header#header{
+        background-color:#fff5ea;
+    }
+    .header__div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .header__nav__a{
+        font-size: 60%;
+    }
+
+    .img__otros{
+        width: 60%;
+        height: 60%;
+    }
+    
+    .img__logo{
+        width: 20px;
+        height: 20px;
+    }
+
+    /*INDEX*/
+
+    .portada{
+        width: 100%;
+        height: auto;  
+    }
+
+    .main__portada2{
+        position: absolute;
+        width: 50%;
+        height:auto ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .slogan{
+        width: auto;
+        font-family:'Monte Carlo';
+        font-style: italic;
+        font-size: 100%;
+        background-color: #dcb58e;
+        margin: 5%;
+    }
+    
+    .slogan1{
+        width: 70%;
+        background-color: #9d7e5f;
+        font-family:'Cinzel', serif;
+        font-size: 100%;
+        margin: 10%;
+    }
+    
+    
+    .slogan2{ 
+        position:absolute;
+        width: 30%;
+        font-size: 100%;
+        color: white;
+        background-color: #b8a19a ;
+        font-family:'Cormorant Garamond', serif;
+        border-style: outset;
+        margin-left: 30%;
+    }
+
+    .main__div{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    
+    }
+    .video{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 60%;
+    }
+
+    .nosotros__titulo{
+        color: #4e453e;
+        font-size: 100%;
+        
+    }
+    
+    .nosotros__text{
+        font-size: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-bottom: 5%; 
+    }
+
+    .footer__div{
+        margin-left: 2%;
+    }
+    
+    .footer__div__redes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .submit{
+        background-color: #6e5f54;
+    }
+    
+    .lista{
+       display: none;
+    }
+    .footer__auroma{
+        margin-right: 2%;
+        color: #6e5f54;
+        font-size: 50%;
+    }
+
+    .redes{
+        width: 50%;
+    }
+
+    .form{
+        font-size: 70%;
+    }
+    .promo{
+        width: 10%;
+    }
+    /*PRODUCTOS*/
+
+    .intro{
+        height: 8%;
+        top: 20%;
+    }
+
+    .main__vela{
+        margin-left: 10%;
+        font-size: 130%;
+    }
+
+    .grid{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        row-gap: 5rem;
+        justify-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;   
+    }
+
+    .img__velas{
+        width: 150px;
+        height: 150px;   
+    }
+
+    .datos__vela{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .button{
+        width: 150px;
+        background-color: black;
+        font-family:'Abhaya Libre', serif;
+        color: white;
+    }
+
+    .map{
+        display: none;
+    }
+
+  
+}
+
+
